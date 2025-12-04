@@ -82,6 +82,7 @@ public class UserServiceImpl implements UserService {
                 request.getUsername(),
                 hashedPassword,
                 request.getEmail());
+        user.setCreatedAt(LocalDateTime.now());
 
         // Save user to database
         User savedUser = userRepository.save(user);
