@@ -11,13 +11,14 @@ USE db_experiment;
 -- ============================================
 -- Sample Users
 -- ============================================
--- Note: In production, use proper password hashing (BCrypt, etc.)
+-- Note: Password hashes are placeholders. TestDataInitializer will update
+-- these with properly Argon2-encoded passwords on application startup.
 INSERT INTO ForumUser (username, password_hash, email) VALUES
-('alice', '$2a$10$dummyhash1', 'alice@example.com'),
-('bob', '$2a$10$dummyhash2', 'bob@example.com'),
-('charlie', '$2a$10$dummyhash3', 'charlie@example.com'),
-('diana', '$2a$10$dummyhash4', 'diana@example.com'),
-('eve', '$2a$10$dummyhash5', 'eve@example.com');
+('alice', 'placeholder', 'alice@example.com'),
+('bob', 'placeholder', 'bob@example.com'),
+('charlie', 'placeholder', 'charlie@example.com'),
+('diana', 'placeholder', 'diana@example.com'),
+('eve', 'placeholder', 'eve@example.com');
 
 -- ============================================
 -- Sample Communities
